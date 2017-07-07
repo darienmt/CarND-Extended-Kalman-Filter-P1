@@ -123,10 +123,6 @@ int main()
     	  estimate(3) = v2;
 
     	  estimations.push_back(estimate);
-        // if ( fabs(y_gt - p_y) > 2 ) {
-        //   std::cout << (y_gt - p_y) << std::endl;
-        //   throw std::invalid_argument("Bye bye");
-        // }
     	  VectorXd RMSE = tools.CalculateRMSE(estimations, ground_truth);
 
           json msgJson;
